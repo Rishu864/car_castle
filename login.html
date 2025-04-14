@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in/Sign up</title>
+</head>
+<style> 
+    body {
+        /* background-color: rgb(243, 237, 237); */
+        text-align: center;
+        /* background-image: linear-gradient(to right, rgb(191, 191, 82), rgb(190, 80, 80)); */
+        background: rgb(12, 85, 141);
+    }
+    .content {
+        display: flex;
+        border-radius: 12px;
+        border: 1px solid rgb(37, 37, 37);
+        margin: 110px 400px 0px 400px;
+        padding: none;
+        background-color: lightgrey;
+        box-shadow: 2px 2px 10px rgb(25, 25, 25);
+    }
+    .content:hover {
+        box-shadow: 3px 3px 15px rgb(25, 25, 25);
+    }
+    .txt {
+        font-family: monospace;
+        border: 0px solid black;
+        padding: 0px 15px 0px 15px;
+        margin: 0px;
+        text-shadow: 1px 1px white;
+    }
+    input {
+        font-size: 18px;
+        border-radius: 6px;
+        font-family: monospace;
+        padding-left: 6px;
+         
+    }
+    button {
+        font-size: 16px;
+        font-family: monospace;
+        border-radius: 15px;
+        color: white;
+        background-color: rgb(118, 118, 227);
+        font-weight: bold;
+        padding: 4px 25px 4px 25px;
+    }
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: blue;
+    }
+    button:hover {
+        padding: 4px 30px 4px 30px;
+        background-color: rgb(98, 98, 228);
+    }
+    input:hover {
+        /* text-shadow: 0.1px 0.1px rgb(92, 92, 92); */
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+    }
+    ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    ul img {
+        margin: 0px 10px 0px 10px;
+    }
+    ul img:hover {
+        box-shadow: 0.5px 0.5px 10px rgb(51, 50, 50);
+    }
+</style>
+<body>
+    <div class="content">
+        <div class="img">
+            <figure>
+                <img src="./img /ford steering.jpg" width="300px" style="margin-top: 10px;  border: 1.5px solid white;
+                border-radius: 12px;" >
+            </figure>
+        </div>
+        <div class="txt">
+            <h2><b>Log in/Sign up</b></h2><hr>
+            <p><input type="text" placeholder="Name"></p>
+            <p><input type="email" placeholder="Email"></p>
+            <p><input type="password" placeholder="Password"></p>
+            <button style="margin-bottom: 10px;" onclick="show01()">Log in</button>
+            <hr>
+            <ul>
+                <li><p style="font-weight: bold; margin:none;">Log in with</p></li>
+                <img src="./img /google icon.png" width="36px" style="cursor: pointer;">
+                <img src="./img /facebook.png" width="36px" style="cursor: pointer;">
+                <img src="./img /appleIcon.png" width="36px" style="cursor: pointer;">
+            </ul>
+            <hr> 
+            <p><button onclick="show02()">Create Account</button></p>
+            
+        </div>
+    </div>
+    <script>
+        function show01() {
+            alert("Fill the details")
+        }
+        function show02() {
+            alert("You already have an account.")
+        }
+    </script>
+</body>
+</html>

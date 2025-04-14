@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    width: 100rem;
+    margin: auto;
+    background-color: red;
+    overflow-x: hidden;
+}
+
+.navbar {
+
+    background-color: black;
+    padding: 1rem;
+}
+.navbar ul {
+    font-size: 1.5rem;
+    gap: 3rem;
+    color: rgba(255, 255, 255, 0.878);
+}

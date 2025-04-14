@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    li a:hover {
+        color: red;
+    }
+    /* ------------------------------------------------------------------------------- */
+    @keyframes run {
+        from{transform: translateX(1500px)}
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    .navBar {
+        display: flex;
+        background-color: black;
+        height: 100px;
+    }
+    #rover {
+        width: 300px;
+        animation-name: run ;
+        animation-duration: 4s;
+    }
+    #title {
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(29, 28, 28);
+        text-shadow: 2px 2px white;
+        margin-top: 20px;
+        margin-left: 5px;
+        background-color: rgb(237, 233, 233);
+        border-radius: 15px;
+        padding: 10px;
+        animation-name: run ;
+        animation-duration: 4s;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    .links {
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+    .links a{
+        margin: 0px 20px 0px 20px;
+        justify-content: flex-end;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;   
+    }
+    /* ------------------------------------------------------------------------------- */
+    
+    /* ------------------------------------------------------------------------------- */
+    .container {
+        width: fit-content;
+        /* margin: 40px 0px 0px 30px; */
+        display: flex;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .container img {
+        width: 360px;
+    }
+    figure {
+        width: fit-content;
+        text-align: center;
+        border-radius: 15px;
+        margin: 20px;
+        padding: 12px;
+    }
+    figure:hover {
+        box-shadow: 1px 1px 10px black;
+        background: radial-gradient(879px at 10.4% 22.3%, rgb(255, 235, 238) 0%, rgb(186, 190, 245) 93.6%);        
+    }
+    figcaption {
+        border: 0.5px solid rgb(143, 142, 142);
+        border-radius: 15px;
+        text-shadow: 1px 1px white;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+    }
+    /* ------------------------------------------------------------------------------- */
+</style>
+<body>
+   <nav class="nav">
+    <div class="navBar">
+        <ul class="logo">
+            <li><img src="./img /rangeRoverSideView.png" id="rover"></li>
+            <li id="title">Services</li>
+        </ul>
+        <ul class="links">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+   </nav>
+
+   <section class="container">
+    <div class="box01">
+        <figure>
+            <img src="./img /rangeRover.png">
+            <figcaption>SUV</figcaption>
+        </figure>
+        <figure>
+            <img src="./img /hondaCity.png">
+            <figcaption>Sedan</figcaption>
+        </figure>
+    </div>
+    <div class="box02">
+        <figure>
+            <img src="./img /fordmustang.png" style="padding: 10px;">
+            <figcaption>Sport Cars</figcaption>
+        </figure>
+        <figure>
+            <img src="./img /swift.png">
+            <figcaption>Hatchback</figcaption>
+        </figure>
+    </div>
+   </section>
+    
+</body>
+</html>

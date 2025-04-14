@@ -1,0 +1,15 @@
+@media all and (max-width: 400px) {
+    .navbar {
+        justify-content: space-between;
+        margin: 0.5rem 1rem;
+    }
+    .navbar .lines {
+        display: flex;
+    }
+    .navbar .items, h2 {
+        display: none;
+    }
+    .title img {
+        width: 8rem;
+    }
+}
